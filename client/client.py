@@ -11,7 +11,7 @@ def log(string):
 log("HackI/O video client")
 
 process = subprocess.Popen(
-        ['libcamera-still', '--height', '480', '--width', '640', '--raw', '-o', '-'],
+        ['libcamera-still', '--height', '480', '--width', '640', '-o', '-'],
         stdout=subprocess.PIPE,
         stderr=log_file
         ) 

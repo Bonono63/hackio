@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
 import time
+import keyboard
 
 # Set up the GPIO 
 def setup_gpio(pin):
@@ -22,3 +23,16 @@ def move(pwm, position):
 def cleanup(pwm):
     pwm.stop()
     GPIO.cleanup()
+
+pin = setup_gpio(17)
+
+while True:
+    if keyboard.is_pressed('q'):
+        break
+    if keyboard.is_pressed('w'):
+        move(pin, high)
+    if keyboard.is_pressed('s'):
+        move(pin, low)
+
+cleanup(pin)
+

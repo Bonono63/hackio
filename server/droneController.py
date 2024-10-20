@@ -15,7 +15,7 @@ def setup_gpio(pin):
         print(f"Failed to initialize GPIO pin {pin}: {e}")
         GPIO.cleanup()
         return None
-    
+
 # Initialize YOLOv5 model
 def load_model(model_path):
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path)
@@ -27,19 +27,24 @@ def detect_obstacles(model, frame):
     detections = results.xyxy[0]  # Get the detection results
     return detections
 
-# Get the largest obstacle's coordinates
-def get_largest_obstacle(detections):
-    largest_area = 0
-    largest_obstacle = None
-
+# Get the top 5 largest obstacles' coordinates
+def get_largest_obstacles(detections, top_n=5):
+    areas = []
+    
     for *bbox, conf, cls in detections:
         x1, y1, x2, y2 = map(int, bbox)
         area = (x2 - x1) * (y2 - y1)
-        if area > largest_area:
-            largest_area = area
-            largest_obstacle = (x1, y1, x2, y2)
+        areas.append((area, (x1, y1, x2, y2)))
 
-    return largest_obstacle
+    # Sort by area in descending order and get the top N largest
+    largest_obstacles = sorted(areas, key=lambda x: x[0], reverse=True)[:top_n]
+    return [coords for area, coords in largest_obstacles]
+
+# Draw bounding boxes on the frame
+def draw_boxes(frame, boxes):
+    for (x1, y1, x2, y2) in boxes:
+        cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)  # Draw a green box
+    return frame
 
 # Move virtual joystick by percentage
 def move(port, percentage):
@@ -60,7 +65,7 @@ def calibrate(port):
     time.sleep(2)
     print("Returning to neutral.")
     move(port, 50)
-    
+
 # Maintain stable position by adjusting throttle based on drift
 def stabilize_drone(throttle_port, current_position, target_position):
     if abs(current_position - target_position) > 5:  # Adjust threshold as needed
@@ -75,3 +80,23 @@ def stabilize_drone(throttle_port, current_position, target_position):
 def cleanup(port):
     port.stop()
     GPIO.cleanup()
+
+# Example usage
+if __name__ == "__main__":
+    model_path = 'path_to_your_model.pt'  # Change this to your model path
+    model = load_model(model_path)
+
+    # Load an image or video frame (example for image)
+    frame = cv2.imread('../image.jpg')  # Change to your image path
+    detections = detect_obstacles(model, frame)
+
+    # Get the top 5 largest obstacles
+    largest_obstacles = get_largest_obstacles(detections, top_n=5)
+
+    # Draw boxes around the largest obstacles
+    frame_with_boxes = draw_boxes(frame, largest_obstacles)
+
+    # Display the result
+    cv2.imshow('Detected Obstacles', frame_with_boxes)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()

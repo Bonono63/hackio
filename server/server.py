@@ -9,10 +9,10 @@ print("Running CV2 verison: ", cv2.__version__)
 
 connection_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Find a way to read these from a file or something
-ip = '192.168.1.203'
+client_ip = '192.168.1.63'
 port = 567
 # create the socket in the OS
-connection_socket.connect(('127.0.0.1', port))
+connection_socket.connect((client_pi, port))
 
 received_data = b""
 payload_size = struct.calcsize("L")

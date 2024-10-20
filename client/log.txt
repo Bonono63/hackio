@@ -1,8 +1,8 @@
-[0:40:56.157877105] [2712] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:325 [0mlibcamera v0.3.2+27-7330f29b
-[0:40:56.278990263] [2715] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:40 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
-[0:40:56.284466815] [2715] [1;33m WARN [1;37mRPI [1;34mvc4.cpp:393 [0mMismatch between Unicam and CamHelper for embedded data usage!
-[0:40:56.285884885] [2715] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:447 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media0 and ISP device /dev/media1
-[0:40:56.285963062] [2715] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1126 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[0:43:07.344553669] [2842] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:325 [0mlibcamera v0.3.2+27-7330f29b
+[0:43:07.467180074] [2845] [1;33m WARN [1;37mRPiSdn [1;34msdn.cpp:40 [0mUsing legacy SDN tuning - please consider moving SDN inside rpi.denoise
+[0:43:07.472613187] [2845] [1;33m WARN [1;37mRPI [1;34mvc4.cpp:393 [0mMismatch between Unicam and CamHelper for embedded data usage!
+[0:43:07.474026830] [2845] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:447 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media0 and ISP device /dev/media1
+[0:43:07.474105111] [2845] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1126 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
 Preview window unavailable
 Mode selection for 1640:1230:12:P
     SRGGB10_CSI2P,640x480/0 - Score: 4500
@@ -13,28 +13,28 @@ Mode selection for 1640:1230:12:P
     SRGGB8,1640x1232/0 - Score: 2006.99
     SRGGB8,1920x1080/0 - Score: 2536.67
     SRGGB8,3280x2464/0 - Score: 2724.99
-[0:40:56.289667586] [2712] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1197 [0mconfiguring streams: (0) 1640x1230-YUV420 (1) 1640x1232-SBGGR10_CSI2P
-[0:40:56.290413002] [2715] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10 - Selected unicam format: 1640x1232-pBAA
+[0:43:07.477802395] [2842] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1197 [0mconfiguring streams: (0) 1640x1230-YUV420 (1) 1640x1232-SBGGR10_CSI2P
+[0:43:07.478494424] [2845] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10 - Selected unicam format: 1640x1232-pBAA
 #0 (0.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #1 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #2 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#3 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#3 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #4 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #5 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #6 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#7 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
-#8 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#7 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#8 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #9 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #10 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #11 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#12 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#12 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #13 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #14 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#15 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#15 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #16 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #17 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #18 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#19 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#19 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #20 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #21 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #22 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
@@ -43,7 +43,7 @@ Mode selection for 1640:1230:12:P
 #25 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #26 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #27 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#28 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#28 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #29 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #30 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #31 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
@@ -52,56 +52,56 @@ Mode selection for 1640:1230:12:P
 #34 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #35 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #36 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#37 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#37 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #38 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #39 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #40 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #41 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #42 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#43 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#43 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #44 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#45 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#46 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
-#47 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#48 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#45 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#46 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#47 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#48 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #49 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #50 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #51 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #52 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#53 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#54 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#53 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#54 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #55 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#56 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#56 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #57 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #58 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#59 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#60 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#59 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#60 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #61 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#62 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#62 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #63 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #64 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #65 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #66 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #67 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #68 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#69 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#69 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #70 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #71 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #72 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#73 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#74 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#73 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#74 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #75 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #76 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #77 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#78 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#78 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #79 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#80 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#80 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #81 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #82 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#83 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#83 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #84 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #85 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#86 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#86 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #87 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #88 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #89 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
@@ -113,16 +113,16 @@ Mode selection for 1640:1230:12:P
 #95 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #96 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #97 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#98 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#99 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#98 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#99 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #100 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #101 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#102 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#102 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #103 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #104 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#105 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#105 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #106 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#107 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#107 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #108 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #109 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #110 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
@@ -133,28 +133,28 @@ Mode selection for 1640:1230:12:P
 #115 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #116 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #117 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#118 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#118 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #119 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #120 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #121 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #122 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#123 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#123 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #124 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #125 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#126 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#126 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #127 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #128 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#129 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
+#129 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
 #130 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #131 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #132 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#133 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#134 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#133 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#134 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #135 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #136 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #137 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #138 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
-#139 (30.00 fps) exp 33251.00 ag 8.00 dg 1.00
+#139 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #140 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 #141 (30.01 fps) exp 33251.00 ag 8.00 dg 1.00
 Mode selection for 640:480:12:P
@@ -166,7 +166,7 @@ Mode selection for 640:480:12:P
     SRGGB8,1640x1232/0 - Score: 2444.49
     SRGGB8,1920x1080/0 - Score: 2636.67
     SRGGB8,3280x2464/0 - Score: 3162.49
-[0:41:01.463189338] [2712] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1197 [0mconfiguring streams: (0) 640x480-YUV420 (1) 640x480-SBGGR10_CSI2P
-[0:41:01.471348698] [2715] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 640x480-SBGGR10_1X10 - Selected unicam format: 640x480-pBAA
+[0:43:12.633652406] [2842] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1197 [0mconfiguring streams: (0) 640x480-YUV420 (1) 640x480-SBGGR10_CSI2P
+[0:43:12.641839420] [2845] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:622 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 640x480-SBGGR10_1X10 - Selected unicam format: 640x480-pBAA
 Still capture image received
-HackI/O video clienttaking the photophoto finishedelapsed image capture time: 2outputting image
+HackI/O video clienttaking the photophoto finishedelapsed image capture time: 2outputting image6517

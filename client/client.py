@@ -1,3 +1,4 @@
+import time
 import subprocess
 import socket
 import struct
@@ -10,6 +11,8 @@ def log(string):
 
 log("HackI/O video client")
 
+image_process_time = int(time.time()*1000)
+
 log("taking the photo")
 process = subprocess.Popen(
         ['libcamera-still', '--saturation', '0', '--height', '480', '--width', '640', '-o', '-'],
@@ -18,6 +21,9 @@ process = subprocess.Popen(
         ) 
 
 log("photo finished")
+log("elapsed image capture time: ")
+final_time = int(time.time()*1000) - image_process_time
+log(f"{final_time}")
 image_data, error = process.communicate()
 
 log("outputting image")

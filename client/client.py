@@ -11,12 +11,12 @@ print("video capture started")
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Find a way to read these from a file or something
-ip = '192.168.1.203'
+server_ip = '192.168.1.252'
 port = 567
 # create the socket in the OS
-server_socket.bind(('127.0.0.1', port))
+server_socket.bind((server_ip, port))
 server_socket.listen(10)
-print("socket bound on 127.0.0.1 on port {port} and listening")
+print("socket bound on {server_ip} on port {port} and listening")
 
 # connect to client
 client_socket, client_address = server_socket.accept()

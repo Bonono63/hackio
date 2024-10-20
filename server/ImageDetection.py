@@ -83,7 +83,7 @@ def cleanup(port):
 
 # Example usage
 if __name__ == "__main__":
-    model_path = 'path_to_your_model.pt'  # Change this to your model path
+    model_path = 'yolov5'  # Change this to your model path
     model = load_model(model_path)
 
     # Load an image or video frame (example for image)

@@ -10,15 +10,18 @@ def log(string):
 
 log("HackI/O video client")
 
+log("taking the photo")
 process = subprocess.Popen(
-        ['libcamera-still', '--height', '480', '--width', '640', '-o', '-'],
+        ['libcamera-still', '--saturation', '0', '--denoising', 'off', '--height', '480', '--width', '640', '-encoding', 'png', '-o', '-'],
         stdout=subprocess.PIPE,
         stderr=log_file
         ) 
 
+log("photo finished")
 image_data, error = process.communicate()
 
-out_file = open("out.img", 'wb')
+log("outputting image")
+out_file = open("out.png", 'wb')
 out_file.write(image_data)
 
 #server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

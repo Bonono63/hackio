@@ -1,9 +1,10 @@
+import subprocess
 import socket
 import struct
 
 log_file = open("log.txt", 'w')
 
-def log(string)
+def log(string):
     print(string)
     log_file.write(string)
 

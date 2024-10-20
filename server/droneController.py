@@ -1,6 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 import cv2
+import torch
 
 # Set up the GPIO 
 def setup_gpio(pin):
@@ -25,7 +26,6 @@ def detect_obstacles(model, frame):
     results = model(frame)
     detections = results.xyxy[0]  # Get the detection results
     return detections
-
 
 # Get the largest obstacle's coordinates
 def get_largest_obstacle(detections):

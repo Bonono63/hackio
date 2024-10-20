@@ -24,11 +24,18 @@ log("photo finished")
 log("elapsed image capture time: ")
 final_time = int(time.time()*1000) - image_process_time
 log(f"{final_time}")
+
+
+image_process_time = int(time.time()*1000)
 image_data, error = process.communicate()
 
 log("outputting image")
 out_file = open("out.png", 'wb')
 out_file.write(image_data)
+
+final_time = int(time.time()*1000) - image_process_time
+log("output image time:")
+log(f"{final_time}")
 
 #server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ## Find a way to read these from a file or something

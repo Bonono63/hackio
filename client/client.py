@@ -12,7 +12,7 @@ log("HackI/O video client")
 
 log("taking the photo")
 process = subprocess.Popen(
-        ['libcamera-still', '--saturation', '0', '--denoising', 'off', '--height', '480', '--width', '640', '-encoding', 'png', '-o', '-'],
+        ['libcamera-still', '--saturation', '0', '--height', '480', '--width', '640', '-o', '-'],
         stdout=subprocess.PIPE,
         stderr=log_file
         ) 

@@ -19,5 +19,6 @@ try:
 except KeyboardInterrupt:
     pass
 
+# Clean up
 pwm.stop()
 GPIO.cleanup()
